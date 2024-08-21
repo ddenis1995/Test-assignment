@@ -660,6 +660,7 @@ GameObject:
   - component: {fileID: 95000012732393394}
   - component: {fileID: 143000011742214054}
   - component: {fileID: 3372679379799903990}
+  - component: {fileID: 3662946153479464123}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -747,6 +748,29 @@ MonoBehaviour:
   _movementSpeed: 2
   _animator: {fileID: 95000012732393394}
   _joystick: {fileID: 0}
+  _health: {fileID: 3662946153479464123}
+  _punchCooldown: 0.5
+  _punchRadius: 1
+  _punchDamage: 5
+  _kickCooldown: 1
+  _kickRadius: 1.2
+  _kickDamage: 10
+  _stunDuration: 1
+  _showHitZones: 0
+  _hitZoneMaterial: {fileID: 2100000, guid: 31c023dd68529224fb8f33607c4aedcc, type: 2}
+--- !u!114 &3662946153479464123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013228589232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e8b2970603875c41bfcd13e3233176a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
 --- !u!1 &1000013290279468
 GameObject:
   m_ObjectHideFlags: 0
