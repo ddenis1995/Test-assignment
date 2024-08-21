@@ -23,15 +23,15 @@ namespace TestAssignment._Project.Scripts.Enemies
         [SerializeField] private float _thirdPositionMark;
 
 
-        private Vector3[] _spawnPoints = new Vector3 [2];
+        private Vector3[] _spawnPoints = new Vector3 [2]
+        {
+            new Vector3(10f,0f,0f),
+            new Vector3(10f, 0f,0f)
+        };
         private int _currentEnemyLevel = 0;
 
         private void Awake()
         {
-            for (int i = 0; i < _spawnPoints.Length-1; i++)
-            {
-                _spawnPoints[i] = new Vector3(10f, 0f,0f);
-            }
             _player = FindObjectOfType<PlayerController>().gameObject;
         }
 

@@ -119,7 +119,7 @@ namespace TestAssignment._Project.Scripts.Enemies
         {
             _isInCooldown = true;
             _animator.SetTrigger("Death");
-            Destroy(gameObject, 10);
+            Destroy(gameObject, 3);
             Destroy(gameObject.GetComponent<EnemyController>());
             Destroy(gameObject.GetComponent<Collider>());
         }
